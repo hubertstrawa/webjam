@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Webjam Podcast - Web Development, Frontend Development`,
+    title: `Webjam Podcast - smakołyki ze świata Web Developmentu`,
     author: {
       name: `Hubert Strawa`,
       summary: `Web Developer. Ex-Blogger @caribbeanstory`,

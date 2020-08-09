@@ -15,9 +15,12 @@ let WEBJAM_01 - {
   ]
 }
 ````
-
 <br>
+
 Czym jest UI/UX design, jak zostać web designerem, kreatywność a praca w biurze vs zdalnie, czy w pracy designera potrzebne są studia, praca w CD Projekt Red, czy warto przejść na homeschooling, e-sport
+<br>
+
+<iframe src="https://open.spotify.com/embed-podcast/show/203qO6W0A5RUdLLjFzBsWU" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
 ## Show Notes 🗒
 

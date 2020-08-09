@@ -92,6 +92,8 @@ body {
     border-radius: 50%;
   }
   
-  .test {
-    width: 300px;
+  @media only screen and (min-width: 480px){
+    ol, ul {
+      margin-left: 1rem;
+    }
   }
