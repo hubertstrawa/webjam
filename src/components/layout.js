@@ -15,31 +15,33 @@ const Layout = ({ location, title, children }) => {
   // const rootPath = `${__PATH_PREFIX__}/`
   let header
   //location.pathname === rootPath
-  if (localStorage.getItem('theme') === 'light') {
-    header = (
-        <Link
-          style={{
-            boxShadow: `none`,
-            color: `inherit`,
-          }}
-          to={`/`}
-        >
-          <img alt="Webjam Logo" className={layoutStyles.logo} src={logoSvg}/>
-          {/* {title} */}
-        </Link>
-    )
-  } else {
-    header = (
-        <Link
-          style={{
-            boxShadow: `none`,
-            color: `inherit`,
-          }}
-          to={`/`}
-        >
-          <img alt="Webjam Logo" className={layoutStyles.logo} src={logoDarkSvg}/>
-        </Link>
-    )
+  if (typeof window !== 'undefined') {
+      if (localStorage.getItem('theme') === 'light'){
+        header = (
+            <Link
+              style={{
+                boxShadow: `none`,
+                color: `inherit`,
+              }}
+              to={`/`}
+            >
+              <img alt="Webjam Logo" className={layoutStyles.logo} src={logoSvg}/>
+              {/* {title} */}
+            </Link>
+        )
+    } else {
+      header = (
+          <Link
+            style={{
+              boxShadow: `none`,
+              color: `inherit`,
+            }}
+            to={`/`}
+          >
+            <img alt="Webjam Logo" className={layoutStyles.logo} src={logoDarkSvg}/>
+          </Link>
+      )
+    }
   }
   
   return (
