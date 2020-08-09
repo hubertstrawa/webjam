@@ -62,7 +62,7 @@ const Layout = ({ location, title, children }) => {
         <ThemeToggler>
           {({ theme, toggleTheme }) => (
             <div className={layoutStyles.headerWrap}>
-              <header>{theme === 'dark' ? <Link className={layoutStyles.logoWrapper} to='/'><img alt="Webjam Logo" className={layoutStyles.logo} src={logoDarkSvg}/></Link> : <Link className={layoutStyles.logoWrapper} to='/'><img alt="Webjam Logo" className={layoutStyles.logo} src={logoSvg}/></Link>}</header>
+              <header>{theme === 'dark' || localStorage.getItem('theme') === 'dark' ? <Link className={layoutStyles.logoWrapper} to='/'><img alt="Webjam Logo" className={layoutStyles.logo} src={logoDarkSvg}/></Link> : <Link className={layoutStyles.logoWrapper} to='/'><img alt="Webjam Logo" className={layoutStyles.logo} src={logoSvg}/></Link>}</header>
               <div>
                 <label className="theme-switch" htmlFor="checkbox">
                 <input
