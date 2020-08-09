@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Webjam Podcast - Web Development, Frontend Development`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Hubert Strawa`,
+      summary: `Web Developer. Ex-Blogger @caribbeanstory`,
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `hubertstrawa`,
     },
   },
   plugins: [
@@ -69,6 +69,7 @@ module.exports = {
         icon: `content/assets/gatsby-icon.png`,
       },
     },
+    'gatsby-plugin-dark-mode',
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-typography`,

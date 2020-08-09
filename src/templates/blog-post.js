@@ -31,6 +31,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             style={{
               ...scale(-1 / 5),
               display: `block`,
+              textTransform: 'capitalize',
               marginBottom: rhythm(1),
             }}
           >
@@ -93,7 +94,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "MMMM DD, YYYY", locale: "pl")
         description
       }
     }

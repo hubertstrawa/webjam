@@ -1,21 +1,22 @@
-import React from "react"
+import React, {useEffect} from "react"
 import { Link } from "gatsby"
+import logoSvg from "../assets/logo.svg"
+import logoDarkSvg from "../assets/logoDark.svg"
 
-import { rhythm, scale } from "../utils/typography"
+import { rhythm } from "../utils/typography"
+import { ThemeToggler } from 'gatsby-plugin-dark-mode'
+import layoutStyles from '../styles/layout.module.css'
+import '../styles/global.css';
 
 const Layout = ({ location, title, children }) => {
-  const rootPath = `${__PATH_PREFIX__}/`
-  let header
+  useEffect(() => {  
+  }, [])
 
-  if (location.pathname === rootPath) {
+  // const rootPath = `${__PATH_PREFIX__}/`
+  let header
+  //location.pathname === rootPath
+  if (localStorage.getItem('theme') === 'light') {
     header = (
-      <h1
-        style={{
-          ...scale(1.5),
-          marginBottom: rhythm(1.5),
-          marginTop: 0,
-        }}
-      >
         <Link
           style={{
             boxShadow: `none`,
@@ -23,18 +24,12 @@ const Layout = ({ location, title, children }) => {
           }}
           to={`/`}
         >
-          {title}
+          <img alt="Webjam Logo" className={layoutStyles.logo} src={logoSvg}/>
+          {/* {title} */}
         </Link>
-      </h1>
     )
   } else {
     header = (
-      <h3
-        style={{
-          fontFamily: `Montserrat, sans-serif`,
-          marginTop: 0,
-        }}
-      >
         <Link
           style={{
             boxShadow: `none`,
@@ -42,11 +37,11 @@ const Layout = ({ location, title, children }) => {
           }}
           to={`/`}
         >
-          {title}
+          <img alt="Webjam Logo" className={layoutStyles.logo} src={logoDarkSvg}/>
         </Link>
-      </h3>
     )
   }
+  
   return (
     <div
       style={{
@@ -54,12 +49,37 @@ const Layout = ({ location, title, children }) => {
         marginRight: `auto`,
         maxWidth: rhythm(24),
         padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+        color: 'var(--textNormal)',
+        transition: 'color 0.2s ease-out, background 0.2s ease-out',
+        display: 'flex',
+        flexDirection: 'column',
+        minHeight: '100vh',
       }}
     >
-      <header>{header}</header>
+      <div>
+        <ThemeToggler>
+          {({ theme, toggleTheme }) => (
+            <div className={layoutStyles.headerWrap}>
+              <header>{theme === 'dark' ? <Link className={layoutStyles.logoWrapper} to='/'><img alt="Webjam Logo" className={layoutStyles.logo} src={logoDarkSvg}/></Link> : <Link className={layoutStyles.logoWrapper} to='/'><img alt="Webjam Logo" className={layoutStyles.logo} src={logoSvg}/></Link>}</header>
+              <div>
+                <label className="theme-switch" htmlFor="checkbox">
+                <input
+                  id="checkbox"
+                  type="checkbox"
+                  onChange={e => toggleTheme(e.target.checked ? 'dark' : 'light')}
+                  checked={theme === 'dark'}
+                />
+                <div className="slider round"></div>
+              </label>
+              </div>
+              {/* <em>Dark mode</em> */}
+            </div>
+          )}
+        </ThemeToggler>
+      </div>
       <main>{children}</main>
-      <footer>
-        © {new Date().getFullYear()}, Built with
+      <footer style={{marginTop: 'auto'}}>
+        © {new Date().getFullYear()} <a href="mailto:hubertstrawa@gmail.com">hubertstrawa@gmail.com</a>, Built with
         {` `}
         <a href="https://www.gatsbyjs.org">Gatsby</a>
       </footer>
