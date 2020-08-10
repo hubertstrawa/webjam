@@ -39,4 +39,6 @@ Czym jest UI/UX design, jak zostać web designerem, kreatywność a praca w biur
 - Hubert: [HeyDesigner's twitter profile](https://twitter.com/heydesigner)
 - Gracjan: [Notion.so](https://www.notion.so/)
 
-![UI Design meme](/ui-ux-meme.jpg)
+
+
+![UI Design Meme](/ui-ux-meme.jpg)
