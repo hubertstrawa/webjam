@@ -1,6 +1,6 @@
 body {
-    --bg: white;
-    --textNormal: #222;
+    --bg: #2D263B;
+    --textNormal: #CEC5DD;
     --textTitle: #222;
     --textLink: blue;
     --hr: hsla(0, 0%, 0%, 0.2);
@@ -20,13 +20,13 @@ body {
     --hr: hsla(0, 0%, 100%, 0.2);
   }
   
-  body.dark strong {
+  body strong {
     color: #fff;
   }
-  body.dark a {
+  body a {
     color: #A06DF3;
   }
-  body.dark hr {
+  body hr {
     background-color: rgba(206,197,221, 0.6);
   }
 
@@ -90,6 +90,10 @@ body {
   
   .slider.round:before {
     border-radius: 50%;
+  }
+
+  .gatsby-resp-image-wrapper {
+    max-width: unset !important;
   }
   
   @media only screen and (min-width: 480px){

@@ -2,9 +2,9 @@ import React, {useEffect} from "react"
 import { Link } from "gatsby"
 import logoSvg from "../assets/logo.svg"
 import logoDarkSvg from "../assets/logoDark.svg"
+import logoSpotify from "../assets/spotify.png"
 
 import { rhythm } from "../utils/typography"
-import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 import layoutStyles from '../styles/layout.module.css'
 import '../styles/global.css';
 
@@ -25,7 +25,7 @@ const Layout = ({ location, title, children }) => {
               }}
               to={`/`}
             >
-              <img alt="Webjam Logo" className={layoutStyles.logo} src={logoSvg}/>
+              <img alt="Webjam Podcast Logo" className={layoutStyles.logo} src={logoSvg}/>
               {/* {title} */}
             </Link>
         )
@@ -38,7 +38,7 @@ const Layout = ({ location, title, children }) => {
             }}
             to={`/`}
           >
-            <img alt="Webjam Logo" className={layoutStyles.logo} src={logoDarkSvg}/>
+            <img alt="Webjam Podcast Logo" className={layoutStyles.logo} src={logoDarkSvg}/>
           </Link>
       )
     }
@@ -59,7 +59,7 @@ const Layout = ({ location, title, children }) => {
       }}
     >
       <div>
-        <ThemeToggler>
+        {/* <ThemeToggler>
           {({ theme, toggleTheme }) => (
             <div className={layoutStyles.headerWrap}>
               <header>{theme === 'dark' || typeof window !== 'undefined' ? <Link className={layoutStyles.logoWrapper} to='/'><img alt="Webjam Logo" className={layoutStyles.logo} src={logoDarkSvg}/></Link> : <Link className={layoutStyles.logoWrapper} to='/'><img alt="Webjam Logo" className={layoutStyles.logo} src={logoSvg}/></Link>}</header>
@@ -74,14 +74,18 @@ const Layout = ({ location, title, children }) => {
                 <div className="slider round"></div>
               </label>
               </div>
-              {/* <em>Dark mode</em> */}
             </div>
           )}
-        </ThemeToggler>
-        {/* <header className={layoutStyles.headerWrap}><Link className={layoutStyles.logoWrapper} to='/'><img alt="Webjam Logo" className={layoutStyles.logo} src={logoDarkSvg}/></Link><span>ttee</span></header> */}
+        </ThemeToggler> */}
+        <header className={layoutStyles.headerWrap}>
+          <Link className={layoutStyles.logoWrapper} to='/'>
+            <img alt="Webjam Podcast Logo" className={layoutStyles.logo} src={logoDarkSvg}/>
+          </Link>
+          <Link className={layoutStyles.logoWrapper} to='https://open.spotify.com/show/203qO6W0A5RUdLLjFzBsWU?si=FIPcZkblR36fgxtCAqYK-g'><img alt="Webjam Podcast Spotify" style={{width: '100px'}} src={logoSpotify}/></Link>
+        </header>
       </div>
       <main>{children}</main>
-      <footer style={{marginTop: 'auto'}}>
+      <footer style={{marginTop: 'auto', textAlign: 'center'}}>
         © {new Date().getFullYear()} <a href="mailto:hubertstrawa@gmail.com">hubertstrawa@gmail.com</a>, Built with
         {` `}
         <a href="https://www.gatsbyjs.org">Gatsby</a>
