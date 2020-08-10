@@ -1,7 +1,7 @@
 ---
 title: UI/UX Design w pigułce, homeschooling, e-sport, feat. Gracjan Złotucha
 date: "2020-08-09T22:40:32.169Z"
-description: EP01 - Czym jest UI/UX design, jak zostać web designerem, kreatywność a praca w biurze vs zdalnie, czy w pracy designera potrzebne są studia, praca w CD Projekt Red, czy warto przejść na homeschooling, e-sport
+description: EP01 - Czym jest UI/UX design, jak zostać web designerem, czy warto przejść na homeschooling, virtual coach do Counter Strike i e-sport
 image: ./content/assets/001-preview.png
 ---
 
@@ -18,7 +18,7 @@ let WEBJAM_01 - {
 ````
 
 <br>
-Czym jest UI/UX design, jak zostać web designerem, kreatywność a praca w biurze vs zdalnie, czy w pracy designera potrzebne są studia, praca w CD Projekt Red, czy warto przejść na homeschooling, e-sport
+W dzisiejszym podcaście dowiesz się czym jest UI/UX Design, jak zostać web designerem, nieco o pracy w branży gamingowej, m.in. CD Projekt Red, czy warto przejść na homeschooling i od wczesnych lat praktykować self-teaching, jak postęp technologiczny wpływa na e-sport.
 <br>
 
 <br>
