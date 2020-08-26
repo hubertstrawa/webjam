@@ -5,8 +5,8 @@ module.exports = {
       name: `Hubert Strawa`,
       summary: `Web Developer. Ex-Blogger @caribbeanstory`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    description: `Webjam to podcast dla wszystkich zainteresowanych programowaniem. Web Development, Front-end Development, UI Design.`,
+    siteUrl: `https://www.webjam.pl/`,
     social: {
       twitter: `hubertstrawa`,
     },
