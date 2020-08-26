@@ -13,12 +13,15 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
 
   // const image = post.frontmatter.image
 
+  console.log(post.frontmatter.description)
+  console.log(post.frontmatter.image)
+
   return (
     <Layout location={location} title={siteTitle}>
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
-        image={post.frontmatter.image}
+        image={'https://www.webjam.pl/static/b36b128f0d4902a303563dad115f7c85/9c177/episodepreview.png'}
       />
       <article>
         <header>
