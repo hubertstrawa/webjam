@@ -12,7 +12,7 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="Webjam Podcast - Web Development, Frontend Development" image={preview}/>
+      <SEO title="Webjam Podcast - Web Development, Frontend Development" image="https://i.imgur.com/V9krEp5.png"/>
       <Bio />
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
