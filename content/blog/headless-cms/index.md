@@ -18,7 +18,7 @@ Czym jest Headless CMS, jakie są różnice pomiędzy podejściem Headless a tra
 <br>
 
 <br>
-<iframe src="https://open.spotify.com/embed-podcast/show/203qO6W0A5RUdLLjFzBsWU" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+<iframe src="https://open.spotify.com/embed-podcast/episode/6iQlragsjOC2jaANZbed1u" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
 ![Headless CMS Preview](images/episode2preview.png)
 
