@@ -6,7 +6,7 @@ image: images/episode2review.png
 ---
 
 ````javascript
-let WEBJAM_01 - {
+let WEBJAM_02 - {
   title: 'Headless CMS - z czym to się je',
   instagram: 'webjamdev',
   twitter: 'hubertstrawa'
