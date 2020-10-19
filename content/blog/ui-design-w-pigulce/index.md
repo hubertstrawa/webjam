@@ -2,7 +2,7 @@
 title: UI/UX Design w pigułce, homeschooling, e-sport, feat. Gracjan Złotucha
 date: "2020-08-09T22:40:32.169Z"
 description: EP01 - Czym jest UI/UX design, jak zostać web designerem, czy warto przejść na homeschooling, virtual coach do Counter Strike i e-sport
-image: images/episodereview.png
+image: https://i.imgur.com/5guBkbY.png
 ---
 
 ````javascript

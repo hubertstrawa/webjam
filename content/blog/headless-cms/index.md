@@ -2,7 +2,7 @@
 title: Headless CMS - z czym to się je
 date: "2020-10-18T17:40:32.169Z"
 description: EP02 - Headless CMS, jakie są różnice pomiędzy tym podejściem a tradycyjnym CMS, jaki Headless CMS wybrać
-image: images/episode2review.png
+image: https://i.imgur.com/UQVlTBL.png
 ---
 
 ````javascript
