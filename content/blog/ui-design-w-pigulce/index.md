@@ -22,7 +22,7 @@ W dzisiejszym podcaście dowiesz się czym jest UI/UX Design, jak zostać web de
 <br>
 
 <br>
-<iframe src="https://open.spotify.com/embed-podcast/show/203qO6W0A5RUdLLjFzBsWU" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+<iframe src="https://open.spotify.com/embed-podcast/episode/7L2hIIwqItLwawmOOjTI9p" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
 
 ![UI Design preview](images/episodepreview.png)
